@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pruebatableview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rps-uJ-uQg">
+                                <rect key="frame" x="0.0" y="60" width="414" height="44"/>
+                                <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                    <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="CARTELERA" id="vH7-Ad-srJ"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2b0-4S-Ujo">
+                                <rect key="frame" x="0.0" y="104" width="414" height="775"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="193" id="OfG-eu-CzQ" customClass="CellClass" customModule="pruebatableview" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="193"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OfG-eu-CzQ" id="4fy-xz-OEG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="193"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" id="Dn3-OZ-n5E" customClass="DesignView" customModule="pruebatableview" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="4" width="414" height="166"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5U-fz-H6C">
+                                                            <rect key="frame" x="133" y="22" width="52.5" height="23"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o64-XQ-CRD">
+                                                            <rect key="frame" x="133" y="119" width="111" height="29"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="111" id="7aD-zN-eBk"/>
+                                                                <constraint firstAttribute="height" constant="29" id="x97-Ly-ViW"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UZi-2D-uAj">
+                                                            <rect key="frame" x="275" y="112" width="117" height="34"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            <state key="normal" title="Comprar">
+                                                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="pulsaCompra:" destination="OfG-eu-CzQ" eventType="touchUpInside" id="k9l-M9-9CI"/>
+                                                                <segue destination="Hys-Zt-xOE" kind="show" id="A7P-pA-evX"/>
+                                                            </connections>
+                                                        </button>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I6B-hH-Bel">
+                                                            <rect key="frame" x="8" y="17" width="95" height="132"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="95" id="bUd-ME-eHW"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="24w-1P-eEV">
+                                                            <rect key="frame" x="275" y="63" width="117" height="38"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O14-PX-SBa">
+                                                            <rect key="frame" x="134" y="74" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igy-xw-X0y">
+                                                            <rect key="frame" x="184" y="72" width="38" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="o64-XQ-CRD" firstAttribute="top" secondItem="Igy-xw-X0y" secondAttribute="bottom" constant="24" id="AX9-jn-1Cu"/>
+                                                        <constraint firstItem="I6B-hH-Bel" firstAttribute="top" secondItem="Dn3-OZ-n5E" secondAttribute="top" constant="17" id="Dqk-6H-T2G"/>
+                                                        <constraint firstItem="Igy-xw-X0y" firstAttribute="leading" secondItem="O14-PX-SBa" secondAttribute="trailing" constant="35" id="GS7-Tu-cC9"/>
+                                                        <constraint firstItem="O14-PX-SBa" firstAttribute="leading" secondItem="I6B-hH-Bel" secondAttribute="trailing" constant="31" id="JLa-Bw-2K9"/>
+                                                        <constraint firstItem="Igy-xw-X0y" firstAttribute="top" secondItem="Dn3-OZ-n5E" secondAttribute="top" constant="72" id="VgT-ce-xyp"/>
+                                                        <constraint firstItem="I6B-hH-Bel" firstAttribute="centerY" secondItem="Dn3-OZ-n5E" secondAttribute="centerY" id="XiC-JG-xn3"/>
+                                                        <constraint firstAttribute="trailing" secondItem="24w-1P-eEV" secondAttribute="trailing" constant="22" id="XwS-kt-OrQ"/>
+                                                        <constraint firstItem="Igy-xw-X0y" firstAttribute="leading" secondItem="O14-PX-SBa" secondAttribute="trailing" constant="35" id="a3a-fg-zNJ"/>
+                                                        <constraint firstItem="24w-1P-eEV" firstAttribute="top" secondItem="Dn3-OZ-n5E" secondAttribute="top" constant="63" id="aIz-um-lJR"/>
+                                                        <constraint firstItem="Igy-xw-X0y" firstAttribute="top" secondItem="Dn3-OZ-n5E" secondAttribute="top" constant="72" id="axz-EZ-WJ4"/>
+                                                        <constraint firstItem="UZi-2D-uAj" firstAttribute="top" secondItem="24w-1P-eEV" secondAttribute="bottom" constant="11" id="dU6-IV-hLn"/>
+                                                        <constraint firstItem="24w-1P-eEV" firstAttribute="leading" secondItem="Igy-xw-X0y" secondAttribute="trailing" constant="53.5" id="fuR-f1-vL3"/>
+                                                        <constraint firstItem="24w-1P-eEV" firstAttribute="leading" secondItem="Igy-xw-X0y" secondAttribute="trailing" constant="53.5" id="gTN-Lz-M3m"/>
+                                                        <constraint firstItem="o64-XQ-CRD" firstAttribute="top" secondItem="O14-PX-SBa" secondAttribute="bottom" constant="24" id="h0f-b3-RVp"/>
+                                                        <constraint firstItem="24w-1P-eEV" firstAttribute="leading" secondItem="Igy-xw-X0y" secondAttribute="trailing" constant="53.5" id="hgF-UW-vD2"/>
+                                                        <constraint firstItem="Igy-xw-X0y" firstAttribute="leading" secondItem="O14-PX-SBa" secondAttribute="trailing" constant="35" id="mP3-AK-rP1"/>
+                                                        <constraint firstItem="N5U-fz-H6C" firstAttribute="leading" secondItem="I6B-hH-Bel" secondAttribute="trailing" constant="30" id="mTd-IZ-GL3"/>
+                                                        <constraint firstItem="N5U-fz-H6C" firstAttribute="top" secondItem="Dn3-OZ-n5E" secondAttribute="top" constant="22" id="sya-g8-osk"/>
+                                                        <constraint firstItem="O14-PX-SBa" firstAttribute="top" secondItem="N5U-fz-H6C" secondAttribute="bottom" constant="29" id="vrA-sN-95e"/>
+                                                        <constraint firstItem="o64-XQ-CRD" firstAttribute="top" secondItem="Igy-xw-X0y" secondAttribute="bottom" constant="24" id="xZR-Jv-cq4"/>
+                                                        <constraint firstItem="N5U-fz-H6C" firstAttribute="leading" secondItem="o64-XQ-CRD" secondAttribute="leading" id="yAa-Rf-p8E"/>
+                                                        <constraint firstItem="I6B-hH-Bel" firstAttribute="leading" secondItem="Dn3-OZ-n5E" secondAttribute="leadingMargin" id="yUE-xj-fyQ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="img" destination="I6B-hH-Bel" id="IR2-Tj-aLb"/>
+                                            <outlet property="labelHora" destination="o64-XQ-CRD" id="RqW-LJ-IGI"/>
+                                            <outlet property="labelNota" destination="Igy-xw-X0y" id="AjX-bP-5Hi"/>
+                                            <outlet property="labelTitulo" destination="N5U-fz-H6C" id="rf0-ZG-8AH"/>
+                                            <outlet property="notaImg" destination="24w-1P-eEV" id="gGU-xZ-BJ3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rps-uJ-uQg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="5bh-Ks-hAE"/>
+                            <constraint firstItem="rps-uJ-uQg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T5h-b3-Rci"/>
+                            <constraint firstItem="rps-uJ-uQg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="za5-wm-S5t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="2b0-4S-Ujo" id="Y1Q-Y7-baI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="136.60714285714286"/>
+        </scene>
+        <!--Entradas View Controller-->
+        <scene sceneID="w0n-Y0-XR4">
+            <objects>
+                <viewController id="Hys-Zt-xOE" customClass="EntradasViewController" customModule="pruebatableview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dxn-5K-hQq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qcb-Io-RhI">
+                                <rect key="frame" x="0.0" y="148" width="414" height="448"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="butaca" rowHeight="377" id="xqy-St-De7" customClass="CellButaca" customModule="pruebatableview" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="377"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xqy-St-De7" id="b6Q-uO-59W">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="377"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmy-kJ-78o">
+                                                    <rect key="frame" x="20" y="5" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="Tae-ha-kPY"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JU4-cv-ZDv">
+                                                    <rect key="frame" x="87" y="5" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="FUk-SZ-re8"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogp-O9-QfU">
+                                                    <rect key="frame" x="190" y="5" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="gL5-i3-zU4"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3z-oE-h8E">
+                                                    <rect key="frame" x="264" y="5" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="C5D-kp-5ro"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ll-5k-ngd">
+                                                    <rect key="frame" x="340" y="5" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="Aqg-sD-isr"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcu-ed-AVs">
+                                                    <rect key="frame" x="340" y="58" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="xp4-Sv-d5M"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjX-nH-w9H">
+                                                    <rect key="frame" x="264" y="58" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="tno-6q-ddS"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXT-bw-9x3">
+                                                    <rect key="frame" x="190" y="58" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="Z83-jg-iSn"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DE-yw-J4Y">
+                                                    <rect key="frame" x="20" y="58" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="Dgd-zd-IFD"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnh-bx-69e">
+                                                    <rect key="frame" x="87" y="58" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="7zX-hf-UEo"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndn-F9-67K">
+                                                    <rect key="frame" x="340" y="108" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="MSp-Ga-tsW"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKj-LD-4U6">
+                                                    <rect key="frame" x="264" y="108" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="vkU-m4-qEx"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ei-S3-q8M">
+                                                    <rect key="frame" x="190" y="108" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="US3-8g-jKT"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba4-Yl-7YK">
+                                                    <rect key="frame" x="87" y="108" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="C64-ww-DlL"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmP-gh-5rm">
+                                                    <rect key="frame" x="20" y="108" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="pLY-q8-1mp"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMZ-r0-1zS">
+                                                    <rect key="frame" x="340" y="159" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="Gnn-MY-Eow"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yy6-Sa-Axf">
+                                                    <rect key="frame" x="264" y="159" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="bQI-Ba-c1f"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQK-Aq-xyO">
+                                                    <rect key="frame" x="190" y="159" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="ZN0-me-tbi"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3As-XY-BSQ">
+                                                    <rect key="frame" x="87" y="159" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="l2V-np-Y8z"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aQ-Cu-7LG">
+                                                    <rect key="frame" x="20" y="159" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="Czc-SW-Zer"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCT-cV-eW8">
+                                                    <rect key="frame" x="340" y="212" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="V66-eA-UU6"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvC-CG-YcA">
+                                                    <rect key="frame" x="264" y="212" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="Ahk-aU-iPl"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAA-Ub-CxR">
+                                                    <rect key="frame" x="190" y="212" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="05P-HQ-sZQ"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVU-Mt-7W3">
+                                                    <rect key="frame" x="87" y="212" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="EMb-ia-AxR"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqe-yq-NqT">
+                                                    <rect key="frame" x="20" y="212" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="pulsaButaca:" destination="xqy-St-De7" eventType="touchUpInside" id="jg3-LE-k39"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jE5-1i-BWQ">
+                                                    <rect key="frame" x="137" y="311" width="139" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="CONFIRMAR"/>
+                                                    <connections>
+                                                        <action selector="insertaBd:" destination="xqy-St-De7" eventType="touchUpInside" id="y7g-6M-Zs1"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btCero" destination="Bmy-kJ-78o" id="id9-Hh-agb"/>
+                                            <outlet property="btCuatro" destination="6Ll-5k-ngd" id="7FE-OA-S79"/>
+                                            <outlet property="btCuatroCero" destination="lqe-yq-NqT" id="1cn-7C-8LY"/>
+                                            <outlet property="btCuatroCuatro" destination="wCT-cV-eW8" id="qee-BH-8Pq"/>
+                                            <outlet property="btCuatroDos" destination="BAA-Ub-CxR" id="bkR-oL-h1d"/>
+                                            <outlet property="btCuatroTres" destination="mvC-CG-YcA" id="B5w-2f-M6D"/>
+                                            <outlet property="btCuatroUno" destination="AVU-Mt-7W3" id="b4D-KJ-xZS"/>
+                                            <outlet property="btDos" destination="ogp-O9-QfU" id="SE0-jx-pUL"/>
+                                            <outlet property="btDosCero" destination="cmP-gh-5rm" id="Y2c-Xk-JcI"/>
+                                            <outlet property="btDosCuatro" destination="ndn-F9-67K" id="BFZ-wY-gsd"/>
+                                            <outlet property="btDosDos" destination="3ei-S3-q8M" id="WPS-XM-ZOP"/>
+                                            <outlet property="btDosTres" destination="AKj-LD-4U6" id="s8I-9g-poT"/>
+                                            <outlet property="btDosUno" destination="ba4-Yl-7YK" id="tQe-jX-jQl"/>
+                                            <outlet property="btTres" destination="J3z-oE-h8E" id="dZA-r0-qmd"/>
+                                            <outlet property="btTresCero" destination="2aQ-Cu-7LG" id="0Qe-34-Urr"/>
+                                            <outlet property="btTresCuatro" destination="nMZ-r0-1zS" id="FRV-vw-GJj"/>
+                                            <outlet property="btTresDos" destination="oQK-Aq-xyO" id="3uf-5B-5jc"/>
+                                            <outlet property="btTresTres" destination="Yy6-Sa-Axf" id="0Iy-UX-zY0"/>
+                                            <outlet property="btTresUno" destination="3As-XY-BSQ" id="uqK-tx-zB8"/>
+                                            <outlet property="btUno" destination="JU4-cv-ZDv" id="fR7-nB-yiz"/>
+                                            <outlet property="btUnoCero" destination="6DE-yw-J4Y" id="JIV-ua-gOa"/>
+                                            <outlet property="btUnoCinco" destination="Rcu-ed-AVs" id="qXg-yA-qk3"/>
+                                            <outlet property="btUnoCuatro" destination="rjX-nH-w9H" id="YAA-YD-J1U"/>
+                                            <outlet property="btUnoDos" destination="Bnh-bx-69e" id="UPj-uF-JBJ"/>
+                                            <outlet property="btUnoTres" destination="eXT-bw-9x3" id="dHH-IN-Ri4"/>
+                                            <outlet property="confirmaCompra" destination="jE5-1i-BWQ" id="mNP-4q-l39"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fXh-aw-rO1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bpf-Mw-c4G"/>
+                    <connections>
+                        <outlet property="tableViewEntradas" destination="qcb-Io-RhI" id="j1a-1C-QH3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vpb-rC-enx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862.31884057971024" y="113.16964285714285"/>
+        </scene>
+    </scenes>
+</document>
